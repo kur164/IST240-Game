@@ -19,9 +19,22 @@ public class myJPanel extends JPanel
         GridLayout grid = new GridLayout(1,1);
         setLayout(grid);
         setBackground(Color.green);
+        
+        //Create Panels
         PanelLeft left = new PanelLeft();
         PanelRight right = new PanelRight();
-        add(left);
-        add(right);
+        IntroScreen intro = new IntroScreen();
+        Instructions instructions = new Instructions();
+        GameDesigners gameDesigners = new GameDesigners();
+        
+        
+        //Add Panels
+        //add(left);
+        //add(right);
+        add(intro);
+        add(instructions);
+        add(gameDesigners);
+        
     }
+
 }
